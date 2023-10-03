@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ButtonContentLayoutIssue.AnotherPage"
+             Title="I'm an another page!">
+    <VerticalStackLayout>
+        <Label 
+            Text="The same two buttons as seen in MainPage"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button HeightRequest="300"
+                WidthRequest="300"
+                ContentLayout="Top"
+                ImageSource="dotnet_bot.png" 
+                Text="Lorem ipsum et dolores lorem ipsum et dolores"
+                LineBreakMode="WordWrap" 
+                />
+        <Button HeightRequest="300"
+                WidthRequest="300"
+                ContentLayout="Bottom"
+                ImageSource="dotnet_bot.png" 
+                Text="Lorem ipsum et dolores lorem ipsum et dolores" 
+                LineBreakMode="WordWrap" 
+                />
+    </VerticalStackLayout>
+</ContentPage>
